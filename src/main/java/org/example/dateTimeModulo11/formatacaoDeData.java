@@ -18,6 +18,8 @@ public class formatacaoDeData {
         System.out.println(d04.format(fmt1));
         // OU
         System.out.println(fmt1.format(d04));
+        // OU
+        System.out.println(d04.format(DateTimeFormatter.ofPattern("dd/MM/yyyy")));
 
         // formatar data-hora para customizado
         DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
