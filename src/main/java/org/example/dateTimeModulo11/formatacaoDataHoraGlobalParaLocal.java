@@ -18,9 +18,15 @@ public class formatacaoDataHoraGlobalParaLocal {
         // pode-se usar:
         LocalDate r1 = LocalDate.ofInstant(d06, ZoneId.systemDefault());
         System.out.println(r1);
-
         // para informar fuso personalizado
         LocalDate r2 = LocalDate.ofInstant(d06, ZoneId.of("Portugal"));
         System.out.println(r2);
+
+        // para formatar para LocalDateTime
+        LocalDateTime r3 = LocalDateTime.ofInstant(d06, ZoneId.systemDefault());
+        System.out.println(r3);
+        // para informar fuso personalizado
+        LocalDateTime r4 = LocalDateTime.ofInstant(d06, ZoneId.of("Portugal"));
+        System.out.println(r4);
     }
 }
