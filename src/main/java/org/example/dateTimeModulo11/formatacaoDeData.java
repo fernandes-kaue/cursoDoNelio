@@ -7,6 +7,10 @@ import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
 public class formatacaoDeData {
+    /**
+     * Classe que demonstra várias formas para se formtar
+     * objetos do tipo Date e DateTime usando o DateTimeFormatter no java.
+     */
     public static void main(String[] args) {
         LocalDate d04 = LocalDate.parse("2026-02-13");
         LocalDateTime d05 = LocalDateTime.parse("2026-02-13T00:00:00");
