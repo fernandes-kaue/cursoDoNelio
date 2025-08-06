@@ -32,5 +32,6 @@ public class formatacaoDeData {
         // precisa usar a função .withZone()
         // pode-se obter automaticamente o fuso do PC com o ZoneId.systemDefault();
         DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss").withZone(ZoneId.systemDefault());
+        System.out.println(fmt3.format(d06));
     }
 }
