@@ -6,6 +6,12 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class instanciacaoDeData {
+    /**
+     * Demonstra a instanciação e manipulação de objetos do tipo Date e
+     * DateTime usando a API Date-Time do Java. Vários formatos e métodos são
+     * utilizados para criar, analisar e formatar datas e horários.
+     *
+     */
     public static void main(String[] args) {
         // cria data do dia atual
         LocalDate d01 =  LocalDate.now();
