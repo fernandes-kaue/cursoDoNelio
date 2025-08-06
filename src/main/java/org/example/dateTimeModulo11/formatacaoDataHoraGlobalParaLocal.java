@@ -28,5 +28,12 @@ public class formatacaoDataHoraGlobalParaLocal {
         // para informar fuso personalizado
         LocalDateTime r4 = LocalDateTime.ofInstant(d06, ZoneId.of("Portugal"));
         System.out.println(r4);
+
+        // como obter dia/mes/ano/hora/minuto
+        System.out.println(d04.getDayOfMonth());
+        System.out.println(d04.getMonthValue());
+        System.out.println(d04.getYear());
+        System.out.println(d05.getHour());
+        System.out.println(d05.getMinute());
     }
 }
