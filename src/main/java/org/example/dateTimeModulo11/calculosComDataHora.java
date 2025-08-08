@@ -57,7 +57,11 @@ public class calculosComDataHora {
 
         // pode-se usar .atTime(0,0) para "burlar" com LocalDate
         Duration t2 = Duration.between(pastWeekLocalDate.atTime(0, 0), d04.atTime(0, 0));
+
+        // também pode-se usar .atStartOfDay() para evitar verbosidade
+        Duration t3 = Duration.between(pastWeekLocalDate.atStartOfDay(), d04.atStartOfDay());
         System.out.println(t1.toDays());
         System.out.println(t2.toDays());
+        System.out.println(t3.toDays());
     }
 }
