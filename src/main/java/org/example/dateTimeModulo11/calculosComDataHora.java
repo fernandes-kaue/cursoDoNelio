@@ -27,7 +27,6 @@ public class calculosComDataHora {
     LocalDate nextYearLocalDate = d04.plusYears(1);
 
     // PARA LOCALDATETIME
-
     // cria uma nova localdatetime com x horas a mais
     // contraparte é minusHours();
     LocalDateTime nextHourLocalDateTime = d05.plusHours(1);
