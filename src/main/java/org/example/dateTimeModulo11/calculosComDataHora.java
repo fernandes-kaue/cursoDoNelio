@@ -51,8 +51,13 @@ public class calculosComDataHora {
 
         // CALCULAR DURAÇÃO
         // necessita da classe Duration
-        // só funciona com LocalDateTime e Instant
+        // só funciona com classes que tenham
+        // definição de horário
         Duration t1 = Duration.between(pastWeekInstant, d06);
+
+        // pode-se usar .atTime(0,0) para "burlar" com LocalDate
+        Duration t2 = Duration.between(pastWeekLocalDate.atTime(0, 0), d04.atTime(0, 0));
         System.out.println(t1.toDays());
+        System.out.println(t2.toDays());
     }
 }
