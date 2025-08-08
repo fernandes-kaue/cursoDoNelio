@@ -18,4 +18,10 @@ public class calculosComDataHora {
     LocalDate pastWeekLocalDate = d04.minusDays(7);
     // cria uma nova data com x dias a mais
     LocalDate nextWeekLocalDate = d04.plusDays(7);
+
+    //cria uam nova dat com x anos a menos
+    LocalDate pastYearLocalDate = d04.minusYears(1);
+    // cria uma nova data com x anos a mais
+    LocalDate nextYearLocalDate = d04.plusYears(1);
+
 }
