@@ -14,6 +14,8 @@ public class calculosComDataHora {
     LocalDateTime d05 = LocalDateTime.parse("2026-02-13T00:00:00");
     Instant d06 = Instant.parse("2026-02-13T00:00:00Z");
 
+
+    // PARA LOCALDATE
     // cria uma nova data com x dias a menos
     LocalDate pastWeekLocalDate = d04.minusDays(7);
     // cria uma nova data com x dias a mais
@@ -23,5 +25,17 @@ public class calculosComDataHora {
     LocalDate pastYearLocalDate = d04.minusYears(1);
     // cria uma nova data com x anos a mais
     LocalDate nextYearLocalDate = d04.plusYears(1);
+
+    // PARA LOCALDATETIME
+
+    // cria uma nova localdatetime com x horas a mais
+    // contraparte é minusHours();
+    LocalDateTime nextHourLocalDateTime = d05.plusHours(1);
+    // cria uma nova localdatetime com x minutos a mais
+    // contraparte é minusMinutes();
+    LocalDateTime nextFifteenLocalDateTime = d05.plusMinutes(15);
+    // cria uma nova localdatetime com x segundos a mais
+    // contraparte é minusSeconds();
+    LocalDateTime nextTenSecondsLocalDateTime = d05.plusSeconds(10);
 
 }
