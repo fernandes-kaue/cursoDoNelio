@@ -63,5 +63,10 @@ public class calculosComDataHora {
         System.out.println(t1.toDays());
         System.out.println(t2.toDays());
         System.out.println(t3.toDays());
+
+        // pode-se usar duration para ver dias restantes
+        // ao passar data "maior" como primeiro argumento
+        Duration t4 = Duration.between(d04.atStartOfDay(), pastWeekLocalDate.atStartOfDay());
+        System.out.println(t4.toDays());
     }
 }
