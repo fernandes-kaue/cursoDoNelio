@@ -8,6 +8,7 @@ package org.example.dateTimeModulo11;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 
 public class calculosComDataHora {
     LocalDate d04 = LocalDate.parse("2026-02-13");
@@ -36,5 +37,13 @@ public class calculosComDataHora {
     // cria uma nova localdatetime com x segundos a mais
     // contraparte é minusSeconds();
     LocalDateTime nextTenSecondsLocalDateTime = d05.plusSeconds(10);
+
+    // PARA INSTANT
+    // não tem métodos para dia/hora/etc
+    // necessita passar como parametro qual unidade temporal será
+    // adicionada ou subtraída
+    // essas unidades são advindas da classe ChronoUnit
+    Instant pastWeekInstant = d06.minus(7, ChronoUnit.DAYS);
+    Instant nextWeekInstant = d06.minus(7, ChronoUnit.DAYS);
 
 }
