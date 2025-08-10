@@ -17,6 +17,7 @@ package org.example.dateTimeModulo11.dateCalendarJava8;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.Instant;
 import java.util.Date;
 
 /**
@@ -47,6 +48,11 @@ public class ClasseDate {
 
         System.out.println("Y1: " + sdf1.format(y1));
         System.out.println("Y2: " + sdf2.format(y2));
+        /*
+        Para criar Date a partir de um Instant
+         */
+        Date y3 = new Date.from(Instant.parse("2026-01-01T00:00:00Z"));
+        System.out.println("Y3: " + y3);
 
         // para criar Date com horário atual:
         Date x1 = new Date();
@@ -66,6 +72,7 @@ public class ClasseDate {
          */
         Date x3 = new Date(0L);
         System.out.println("X3: " + x3);
+
 
     }
 }
