@@ -23,7 +23,7 @@ public class instanciacaoDeData {
      */
     public static void main(String[] args) {
         // cria data do dia atual
-        LocalDate d01 =  LocalDate.now();
+        LocalDate d01 = LocalDate.now();
         System.out.println(d01);
 
         // cria data com horário e fuso
