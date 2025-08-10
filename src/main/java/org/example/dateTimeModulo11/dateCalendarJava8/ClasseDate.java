@@ -26,5 +26,11 @@ public class ClasseDate {
         Date y1 = sdf1.parse("09/08/2025");
         Date y2 = sdf2.parse("09/08/2025 21:21:21");
 
+        System.out.println("Y1: " + y1);
+        System.out.println("Y2: " + y2);
+
+        System.out.println("Y1: " + sdf1.format(y1));
+        System.out.println("Y2: " + sdf2.format(y2));
+
     }
 }
