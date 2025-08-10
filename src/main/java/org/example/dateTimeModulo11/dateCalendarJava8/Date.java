@@ -13,8 +13,12 @@ package org.example.dateTimeModulo11.dateCalendarJava8;
 // dd/MM/yyyy -> 09/08/2025
 // dd/MM/yyyy HH:mm:ss -> 09/08/2025 21:21:21
 
+import java.text.SimpleDateFormat;
+
 public class Date {
     public static void main(String[] args) {
+
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     }
 }
