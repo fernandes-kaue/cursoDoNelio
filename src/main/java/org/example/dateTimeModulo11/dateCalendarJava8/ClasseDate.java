@@ -32,5 +32,13 @@ public class ClasseDate {
         System.out.println("Y1: " + sdf1.format(y1));
         System.out.println("Y2: " + sdf2.format(y2));
 
+        // para criar Date com horário atual:
+        Date x1 = new Date();
+        System.out.println("X1: " + x1);
+
+        // ou
+        Date x2 = new Date(System.currentTimeMillis());
+        System.out.println("X2: " + x2);
+
     }
 }
