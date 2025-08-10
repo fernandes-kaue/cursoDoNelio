@@ -39,6 +39,10 @@ public class ClasseDate {
 
         SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy");
         SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        /*
+        Pode-se definir o fuso que será usado nos SDF's utilizando
+        sdf.setTimeZone(TimeZone.getTimeZone("GMT"); (substituir GMT por TimeZone desejado)
+         */
 
         Date y1 = sdf1.parse("09/08/2025");
         Date y2 = sdf2.parse("09/08/2025 21:21:21");
