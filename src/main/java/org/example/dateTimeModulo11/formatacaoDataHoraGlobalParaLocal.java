@@ -5,17 +5,32 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 
+/**
+ * Demonstra a conversão de instantes globais (Instant) para representações locais
+ * (LocalDate e LocalDateTime) usando ZoneId, bem como a extração de componentes de data e hora.
+ */
 public class formatacaoDataHoraGlobalParaLocal {
+    /**
+     * Ponto de entrada do programa que ilustra:
+     * - conversão de Instant para LocalDate e LocalDateTime com fuso do sistema ou personalizado;
+     * - extração de dia, mês, ano, hora e minuto de objetos locais.
+     *
+     * @param args argumentos de linha de comando (não utilizados)
+     */
     public static void main(String[] args) {
         LocalDate d04 = LocalDate.parse("2026-02-13");
         LocalDateTime d05 = LocalDateTime.parse("2026-02-13T00:00:00");
         Instant d06 = Instant.parse("2026-02-13T00:00:00Z");
 
-        // para se formatar data global para local
-        // precisa-se informar o TimeZone (fuso)
+        /*
+         para se formatar data global para local
+         precisa-se informar o TimeZone (fuso)
+        */
 
-        // para se formatar um Instant para uma LocalDate
-        // pode-se usar:
+        /*
+         para se formatar um Instant para uma LocalDate
+         pode-se usar:
+        */
         LocalDate r1 = LocalDate.ofInstant(d06, ZoneId.systemDefault());
         System.out.println(r1);
         // para informar fuso personalizado

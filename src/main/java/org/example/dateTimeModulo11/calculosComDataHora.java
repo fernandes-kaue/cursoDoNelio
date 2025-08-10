@@ -1,9 +1,11 @@
 package org.example.dateTimeModulo11;
 
-// quick reminder:
-// data hora são objetos imutáveis
-// para fazer calculos deve-se
-// criar um novo objeto com a data resultante
+/*
+ quick reminder:
+ data hora são objetos imutáveis
+ para fazer calculos deve-se
+ criar um novo objeto com a data resultante
+*/
 
 import java.time.Duration;
 import java.time.Instant;
@@ -11,7 +13,20 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
+/**
+ * Demonstra operações de cálculo com datas e horas utilizando LocalDate, LocalDateTime e Instant,
+ * bem como o uso de Duration para medir intervalos. Os exemplos destacam a imutabilidade desses tipos.
+ */
 public class calculosComDataHora {
+    /**
+     * Ponto de entrada do programa que demonstra:
+     * - adição e subtração de dias e anos em LocalDate;
+     * - adição de horas, minutos e segundos em LocalDateTime;
+     * - operações em Instant com ChronoUnit;
+     * - cálculo de duração entre instantes e datas convertidas para início do dia.
+     *
+     * @param args argumentos de linha de comando (não utilizados)
+     */
     public static void main(String[] args) {
 
         LocalDate d04 = LocalDate.parse("2026-02-13");
@@ -31,28 +46,38 @@ public class calculosComDataHora {
         LocalDate nextYearLocalDate = d04.plusYears(1);
 
         // PARA LOCALDATETIME
-        // cria uma nova localdatetime com x horas a mais
-        // contraparte é minusHours();
+        /*
+         cria uma nova localdatetime com x horas a mais
+         contraparte é minusHours();
+        */
         LocalDateTime nextHourLocalDateTime = d05.plusHours(1);
-        // cria uma nova localdatetime com x minutos a mais
-        // contraparte é minusMinutes();
+        /*
+         cria uma nova localdatetime com x minutos a mais
+         contraparte é minusMinutes();
+        */
         LocalDateTime nextFifteenLocalDateTime = d05.plusMinutes(15);
-        // cria uma nova localdatetime com x segundos a mais
-        // contraparte é minusSeconds();
+        /*
+         cria uma nova localdatetime com x segundos a mais
+         contraparte é minusSeconds();
+        */
         LocalDateTime nextTenSecondsLocalDateTime = d05.plusSeconds(10);
 
-        // PARA INSTANT
-        // não tem métodos para dia/hora/etc
-        // necessita passar como parametro qual unidade temporal será
-        // adicionada ou subtraída
-        // essas unidades são advindas da classe ChronoUnit
+        /*
+         PARA INSTANT
+         não tem métodos para dia/hora/etc
+         necessita passar como parametro qual unidade temporal será
+         adicionada ou subtraída
+         essas unidades são advindas da classe ChronoUnit
+        */
         Instant pastWeekInstant = d06.minus(7, ChronoUnit.DAYS);
         Instant nextWeekInstant = d06.minus(7, ChronoUnit.DAYS);
 
-        // CALCULAR DURAÇÃO
-        // necessita da classe Duration
-        // só funciona com classes que tenham
-        // definição de horário
+        /*
+         CALCULAR DURAÇÃO
+         necessita da classe Duration
+         só funciona com classes que tenham
+         definição de horário
+        */
         Duration t1 = Duration.between(pastWeekInstant, d06);
 
         // pode-se usar .atTime(0,0) para "burlar" com LocalDate
@@ -64,8 +89,10 @@ public class calculosComDataHora {
         System.out.println(t2.toDays());
         System.out.println(t3.toDays());
 
-        // pode-se usar duration para ver dias restantes
-        // ao passar data "maior" como primeiro argumento
+        /*
+         pode-se usar duration para ver dias restantes
+         ao passar data "maior" como primeiro argumento
+        */
         Duration t4 = Duration.between(d04.atStartOfDay(), pastWeekLocalDate.atStartOfDay());
         System.out.println(t4.toDays());
     }

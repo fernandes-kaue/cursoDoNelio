@@ -1,23 +1,39 @@
 package org.example.dateTimeModulo11.dateCalendarJava8;
 
-// Date repreasente um instante
-// é do pacote java.util
-//
-// O tipo Date armazena o número de milissegundos desde
-// 01/01/1970 GMT (UTC)
+/*
+ Date representa um instante
+ é do pacote java.util
 
-// SimpleDateFormat
-// Define formatos para conversão entre Date e String
-// Ex:
-//
-// dd/MM/yyyy -> 09/08/2025
-// dd/MM/yyyy HH:mm:ss -> 09/08/2025 21:21:21
+ O tipo Date armazena o número de milissegundos desde
+ 01/01/1970 GMT (UTC)
+
+ SimpleDateFormat
+ Define formatos para conversão entre Date e String
+ Ex:
+
+ dd/MM/yyyy -> 09/08/2025
+ dd/MM/yyyy HH:mm:ss -> 09/08/2025 21:21:21
+*/
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+/**
+ * Demonstra o uso de java.util.Date e SimpleDateFormat para conversão entre Date e String,
+ * além de diferentes formas de instanciar datas. Inclui formatação, parsing e uso do epoch (0L).
+ */
 public class ClasseDate {
+    /**
+     * Ponto de entrada do programa.
+     * <p>
+     * - Faz parsing de strings para Date com SimpleDateFormat.<br>
+     * - Formata instâncias de Date para strings.<br>
+     * - Demonstra criação de datas atuais e a partir do epoch.
+     *
+     * @param args argumentos de linha de comando (não utilizados)
+     * @throws ParseException se as strings de data estiverem em formato inválido
+     */
     public static void main(String[] args) throws ParseException {
 
         SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy");

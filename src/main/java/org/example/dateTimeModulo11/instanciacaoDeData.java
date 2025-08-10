@@ -12,6 +12,15 @@ public class instanciacaoDeData {
      * utilizados para criar, analisar e formatar datas e horários.
      *
      */
+    /**
+     * Ponto de entrada do programa que demonstra:
+     * - criação de datas/horas atuais (LocalDate, LocalDateTime, Instant);
+     * - parsing de textos ISO 8601;
+     * - parsing com formatos personalizados;
+     * - criação a partir de componentes isolados.
+     *
+     * @param args argumentos de linha de comando (não utilizados)
+     */
     public static void main(String[] args) {
         // cria data do dia atual
         LocalDate d01 =  LocalDate.now();
@@ -37,8 +46,10 @@ public class instanciacaoDeData {
         Instant d06 = Instant.parse("2026-02-13T00:00:00Z");
         System.out.println(d06);
 
-        // instancia data a partir de texto ISO 8601 COM FUSO
-        // diferente do GMT
+        /*
+         instancia data a partir de texto ISO 8601 COM FUSO
+         diferente do GMT
+        */
         Instant d07 = Instant.parse("2026-02-13T00:00:00-03:00");
         System.out.println(d07);
 
@@ -60,4 +71,3 @@ public class instanciacaoDeData {
         System.out.println(d11);
     }
 }
-
