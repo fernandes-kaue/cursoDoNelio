@@ -40,5 +40,16 @@ public class ClasseDate {
         Date x2 = new Date(System.currentTimeMillis());
         System.out.println("X2: " + x2);
 
+        /*
+        Ao instanciar Date com 0L, é instanciado a data de
+        01/01/1970 00:00:00
+
+        Como é calculado em MILISSEGUNDOS, tem de se fazer a conversão antes de instanciar
+        exemplo:
+        Date data = new Date(1000L (milisegundos) * 60L (vira minutos) * 60L (vira hora) * XL(vira x horas);
+         */
+        Date x3 = new Date(0L);
+        System.out.println("X3: " + x3);
+
     }
 }
