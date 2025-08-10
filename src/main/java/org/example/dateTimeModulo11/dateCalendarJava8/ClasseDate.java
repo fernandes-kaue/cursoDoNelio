@@ -51,7 +51,7 @@ public class ClasseDate {
         /*
         Para criar Date a partir de um Instant
          */
-        Date y3 = new Date.from(Instant.parse("2026-01-01T00:00:00Z"));
+        Date y3 = Date.from(Instant.parse("2026-01-01T00:00:00Z"));
         System.out.println("Y3: " + y3);
 
         // para criar Date com horário atual:
