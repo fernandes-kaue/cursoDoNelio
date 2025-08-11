@@ -33,5 +33,21 @@ public class ClasseCalender {
 
         System.out.println("Date após calculo: " + sdf.format(date));
 
+        // PARA OBTERMOS AS UNIDADES TEMPORAIS
+        // Instanciação normal
+        Date date2 = Date.from(Instant.parse("2020-12-31T20:20:20Z"));
+        System.out.println("Date2: " + sdf.format(date2));
+        Calendar cal2 = Calendar.getInstance();
+        cal2.setTime(date2);
+
+        // para OBTER as unidades
+        int minutes = cal2.get(Calendar.MINUTE);
+        // MONTH começa com 0, deve-se adicionar 1
+        // para seguir a ordem natural
+        int month = 1 + cal2.get(Calendar.MONTH);
+
+        System.out.println("Minutes: " +  minutes);
+        System.out.println("Month: " + month);
+
     }
 }
