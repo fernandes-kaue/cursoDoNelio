@@ -43,6 +43,7 @@ public class Enumeracoes {
                código mais legível
                e auxiliado pelo compilador
      */
+    Order order = new Order(1, OrderStatus.PENDING_PAYMENT);
 
     }
 
@@ -54,7 +55,7 @@ public class Enumeracoes {
         DELIVERED;
     }
 
-    class Order {
+    static class Order {
         private Integer ID;
         private LocalDate moment;
         private OrderStatus status;
