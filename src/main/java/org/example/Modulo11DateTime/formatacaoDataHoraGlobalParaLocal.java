@@ -1,4 +1,4 @@
-package org.example.dateTimeModulo11;
+package org.example.Modulo11DateTime;
 
 import java.time.Instant;
 import java.time.LocalDate;

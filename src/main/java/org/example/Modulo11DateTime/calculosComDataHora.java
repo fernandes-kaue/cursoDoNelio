@@ -1,4 +1,4 @@
-package org.example.dateTimeModulo11;
+package org.example.Modulo11DateTime;
 
 /*
  quick reminder:
