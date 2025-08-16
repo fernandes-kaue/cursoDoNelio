@@ -46,7 +46,7 @@ public class ClasseCalender {
         // para seguir a ordem natural
         int month = 1 + cal2.get(Calendar.MONTH);
 
-        System.out.println("Minutes: " +  minutes);
+        System.out.println("Minutes: " + minutes);
         System.out.println("Month: " + month);
 
     }
