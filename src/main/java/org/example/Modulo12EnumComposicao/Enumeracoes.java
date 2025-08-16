@@ -42,6 +42,13 @@ public class Enumeracoes {
                e auxiliado pelo compilador
      */
 
+    // Como criar um Enum:
+    enum OrderStatus {
+        PENDING_PAYMENT,
+        PROCESSING,
+        SHIPPED,
+        DELIVERED;
+    }
 
     }
 }
