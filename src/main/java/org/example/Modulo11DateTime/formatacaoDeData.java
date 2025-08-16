@@ -9,6 +9,10 @@ import java.time.format.DateTimeFormatter;
 /**
  * Demonstra várias formas de formatar LocalDate, LocalDateTime e Instant utilizando
  * DateTimeFormatter, incluindo padrões customizados e aplicação de fuso horário via ZoneId.
+ *
+ * @author Kaue
+ * @since 2025-08-15
+ * @version 1.0
  */
 public class formatacaoDeData {
     /**

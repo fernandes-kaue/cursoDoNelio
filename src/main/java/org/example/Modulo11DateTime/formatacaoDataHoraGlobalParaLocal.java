@@ -8,6 +8,10 @@ import java.time.ZoneId;
 /**
  * Demonstra a conversão de instantes globais (Instant) para representações locais
  * (LocalDate e LocalDateTime) usando ZoneId, bem como a extração de componentes de data e hora.
+ *
+ * @author Kaue
+ * @since 2025-08-15
+ * @version 1.0
  */
 public class formatacaoDataHoraGlobalParaLocal {
     /**

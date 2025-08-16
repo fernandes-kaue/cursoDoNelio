@@ -31,6 +31,11 @@ import java.time.LocalDate;
  * @version 1.0
  */
 public class Enumeracoes {
+    /**
+     * Ponto de entrada com exemplo simples de uso de enum e impressão de um pedido.
+     *
+     * @param args argumentos de linha de comando (não utilizados)
+     */
     public static void main(String[] args) {
     /*
     O que é uma Enumeração?

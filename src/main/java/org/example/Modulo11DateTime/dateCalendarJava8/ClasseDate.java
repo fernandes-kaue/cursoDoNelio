@@ -23,6 +23,10 @@ import java.util.Date;
 /**
  * Demonstra o uso de java.util.Date e SimpleDateFormat para conversão entre Date e String,
  * além de diferentes formas de instanciar datas. Inclui formatação, parsing e uso do epoch (0L).
+ *
+ * @author Kaue
+ * @since 2025-08-15
+ * @version 1.0
  */
 public class ClasseDate {
     /**

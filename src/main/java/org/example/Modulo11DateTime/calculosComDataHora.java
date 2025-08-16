@@ -16,6 +16,10 @@ import java.time.temporal.ChronoUnit;
 /**
  * Demonstra operações de cálculo com datas e horas utilizando LocalDate, LocalDateTime e Instant,
  * bem como o uso de Duration para medir intervalos. Os exemplos destacam a imutabilidade desses tipos.
+ *
+ * @author Kaue
+ * @since 2025-08-15
+ * @version 1.0
  */
 public class calculosComDataHora {
     /**

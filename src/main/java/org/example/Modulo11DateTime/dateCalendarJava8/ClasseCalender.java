@@ -7,6 +7,14 @@ import java.time.Instant;
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ * Demonstra operações com java.util.Calendar para adicionar unidades de tempo e
+ * extrair componentes (minuto, mês) a partir de uma Date, com formatação por SimpleDateFormat.
+ *
+ * @author Kaue
+ * @since 2025-08-15
+ * @version 1.0
+ */
 public class ClasseCalender {
     public static void main(String[] args) {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");

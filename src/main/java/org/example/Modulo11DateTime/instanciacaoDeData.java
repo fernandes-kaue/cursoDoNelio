@@ -5,12 +5,29 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+/**
+ * Demonstra a instanciação e manipulação de datas/horas com a API Date-Time do Java
+ * (LocalDate, LocalDateTime e Instant), incluindo criação, parsing e formatação.
+ *
+ * @author Kaue
+ * @since 2025-08-15
+ * @version 1.0
+ */
 public class instanciacaoDeData {
     /**
      * Demonstra a instanciação e manipulação de objetos do tipo Date e
      * DateTime usando a API Date-Time do Java. Vários formatos e métodos são
      * utilizados para criar, analisar e formatar datas e horários.
      *
+     */
+    /**
+     * Ponto de entrada do programa que demonstra:
+     * - criação de datas/horas atuais (LocalDate, LocalDateTime, Instant);
+     * - parsing de textos ISO 8601;
+     * - parsing com formatos personalizados;
+     * - criação a partir de componentes isolados.
+     *
+     * @param args argumentos de linha de comando (não utilizados)
      */
     /**
      * Ponto de entrada do programa que demonstra:
