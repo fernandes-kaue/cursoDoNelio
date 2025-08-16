@@ -43,6 +43,7 @@ public class Enumeracoes {
                código mais legível
                e auxiliado pelo compilador
      */
+
     }
 
     // Como criar um Enum:
@@ -60,7 +61,7 @@ public class Enumeracoes {
 
         public Order(){}
 
-        public Order(Integer ID, LocalDate moment, OrderStatus status){
+        public Order(Integer ID, OrderStatus status){
             this.ID = ID;
             this.moment = LocalDate.now();
             this.status = status;
