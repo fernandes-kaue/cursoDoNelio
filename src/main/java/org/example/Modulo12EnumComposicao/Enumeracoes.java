@@ -44,6 +44,7 @@ public class Enumeracoes {
                e auxiliado pelo compilador
      */
     Order order = new Order(1, OrderStatus.PENDING_PAYMENT);
+    System.out.println( order);
 
     }
 
