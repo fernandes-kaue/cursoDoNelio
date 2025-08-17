@@ -99,5 +99,6 @@ public class calculosComDataHora {
         */
         Duration t4 = Duration.between(d04.atStartOfDay(), pastWeekLocalDate.atStartOfDay());
         System.out.println(t4.toDays());
+        // just for the streak, im watching ufc :P
     }
 }
