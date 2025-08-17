@@ -59,5 +59,11 @@ public class ExercicioComposicao {
         }
     }
 
+    enum WorkerLever {
+        JUNIOR,
+        MID_LEVER,
+        SENIOR;
+    }
+
 
 }
