@@ -59,11 +59,12 @@ public class ExercicioComposicao {
         }
     }
 
-    enum WorkerLever {
+    enum WorkerLevel {
         JUNIOR,
         MID_LEVER,
         SENIOR;
     }
+
 
 
 }
