@@ -19,7 +19,18 @@ public class ExercicioComposicao {
 
         Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), workerBaseSalary, new Department(departmentName));
 
+        System.out.println("How many contracts to this worker?");
+        int contracts = sc.nextInt();
 
+        for (int i = 0; i < contracts; i++) {
+            System.out.print("Enter contract #" + (i + 1) + " data:");
+            System.out.print("Date (dd/MM/yyyy): ");
+            String contractDate = sc.nextLine();
+            System.out.print("Value per hour: ");
+            Double contractValuePerHour = sc.nextDouble();
+            System.out.print("Hours: ");
+            Integer contractHours = sc.nextInt();
+        }
 
         sc.close();
     }
