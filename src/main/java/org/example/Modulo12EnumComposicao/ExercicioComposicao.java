@@ -1,6 +1,7 @@
 package org.example.Modulo12EnumComposicao;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -34,6 +35,10 @@ public class ExercicioComposicao {
             this.date = date;
             this.valuePerHour = valuePerHour;
             this.hours = hours;
+        }
+
+        public double totalValue(){
+            return valuePerHour * hours;
         }
 
         public Date getDate() {
@@ -80,6 +85,31 @@ public class ExercicioComposicao {
             this.level = level;
             this.baseSalary = baseSalary;
             this.department = department;
+        }
+
+        public void addContract(HourContract contract){
+            contracts.add(contract);
+        }
+
+        public HourContract removeContract(HourContract contract){
+            HourContract aux = contract;
+            contracts.remove(contract);
+            return aux;
+        }
+
+        public double income(int year, int month){
+            double sum = baseSalary;
+            Calendar cal = Calendar.getInstance();
+            for (HourContract contract : contracts) {
+                cal.setTime(contract.getDate());
+                int c_year = cal.get(Calendar.YEAR);
+                int c_month = 1 + cal.get(Calendar.MONTH);
+                if (year == c_year && month == c_month){
+                    sum += contract.totalValue();
+                }
+            }
+
+            return sum;
         }
 
         public String getName() {
