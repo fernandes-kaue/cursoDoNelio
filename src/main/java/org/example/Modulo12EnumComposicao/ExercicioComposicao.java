@@ -1,16 +1,30 @@
 package org.example.Modulo12EnumComposicao;
 
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 public class ExercicioComposicao {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
+        System.out.print("Enter department's name: ");
+        String departmentName = sc.nextLine();
+
+        System.out.print("Enter worker's data:");
+        System.out.print("Name: ");
+        String workerName = sc.nextLine();
+        System.out.print("Level: ");
+        String workerLevel = sc.nextLine();
+        System.out.print("Base salary: ");
+        Double workerBaseSalary = sc.nextDouble();
+
+        Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), workerBaseSalary, new Department(departmentName));
+
+
+
+        sc.close();
     }
 
-    class Department {
+    static class Department {
         private String name;
 
         public Department(String name) {
@@ -72,7 +86,7 @@ public class ExercicioComposicao {
         SENIOR;
     }
 
-    class Worker {
+    static class Worker {
         private String name;
         private WorkerLevel level;
         private Double baseSalary;
