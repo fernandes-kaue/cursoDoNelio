@@ -1,10 +1,13 @@
 package org.example.Modulo12EnumComposicao;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class ExercicioComposicao {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         Scanner sc = new Scanner(System.in);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
         System.out.print("Enter department's name: ");
         String departmentName = sc.nextLine();
@@ -25,11 +28,15 @@ public class ExercicioComposicao {
         for (int i = 0; i < contracts; i++) {
             System.out.print("Enter contract #" + (i + 1) + " data:");
             System.out.print("Date (dd/MM/yyyy): ");
-            String contractDate = sc.nextLine();
+            Date contractDate = sdf.parse(sc.nextLine());
             System.out.print("Value per hour: ");
             Double contractValuePerHour = sc.nextDouble();
             System.out.print("Hours: ");
             Integer contractHours = sc.nextInt();
+            sc.nextLine();
+
+            HourContract contract = new HourContract(contractDate, contractValuePerHour, contractHours);
+            worker.addContract(contract);
         }
 
         sc.close();
@@ -51,7 +58,7 @@ public class ExercicioComposicao {
         }
     }
 
-    class HourContract {
+    static class HourContract {
         private Date date;
         private Double valuePerHour;
         private Integer hours;
