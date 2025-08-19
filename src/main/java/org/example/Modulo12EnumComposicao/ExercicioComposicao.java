@@ -80,7 +80,7 @@ public class ExercicioComposicao {
             this.hours = hours;
         }
 
-        public double totalValue(){
+        public double totalValue() {
             return valuePerHour * hours;
         }
 
@@ -110,9 +110,7 @@ public class ExercicioComposicao {
     }
 
     enum WorkerLevel {
-        JUNIOR,
-        MID_LEVEL,
-        SENIOR;
+        JUNIOR, MID_LEVEL, SENIOR;
     }
 
     static class Worker {
@@ -130,24 +128,24 @@ public class ExercicioComposicao {
             this.department = department;
         }
 
-        public void addContract(HourContract contract){
+        public void addContract(HourContract contract) {
             contracts.add(contract);
         }
 
-        public HourContract removeContract(HourContract contract){
+        public HourContract removeContract(HourContract contract) {
             HourContract aux = contract;
             contracts.remove(contract);
             return aux;
         }
 
-        public double income(int year, int month){
+        public double income(int year, int month) {
             double sum = baseSalary;
             Calendar cal = Calendar.getInstance();
             for (HourContract contract : contracts) {
                 cal.setTime(contract.getDate());
                 int c_year = cal.get(Calendar.YEAR);
                 int c_month = 1 + cal.get(Calendar.MONTH);
-                if (year == c_year && month == c_month){
+                if (year == c_year && month == c_month) {
                     sum += contract.totalValue();
                 }
             }
@@ -192,5 +190,7 @@ public class ExercicioComposicao {
         }
     }
 
+    // não sei se vou conseguir dar continuidade de noite
+    // então esse commit é só pela streak no GitHub
 
 }
