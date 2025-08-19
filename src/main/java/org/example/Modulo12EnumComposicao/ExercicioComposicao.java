@@ -12,7 +12,7 @@ public class ExercicioComposicao {
         System.out.print("Enter department's name: ");
         String departmentName = sc.nextLine();
 
-        System.out.print("Enter worker's data:");
+        System.out.println("Enter worker's data:");
         System.out.print("Name: ");
         String workerName = sc.nextLine();
         System.out.print("Level: ");
@@ -24,6 +24,7 @@ public class ExercicioComposicao {
 
         System.out.println("How many contracts to this worker?");
         int contracts = sc.nextInt();
+        sc.nextLine();
 
         for (int i = 0; i < contracts; i++) {
             System.out.print("Enter contract #" + (i + 1) + " data:");
@@ -38,6 +39,16 @@ public class ExercicioComposicao {
             HourContract contract = new HourContract(contractDate, contractValuePerHour, contractHours);
             worker.addContract(contract);
         }
+
+        System.out.println();
+        System.out.println("Enter month and year to calculate income (MM/YYYY): ");
+        String monthAndYear = sc.next();
+        int month = Integer.parseInt(monthAndYear.substring(0, 2));
+        int year = Integer.parseInt(monthAndYear.substring(3));
+
+        System.out.println("Name: " + worker.getName());
+        System.out.println("Department: " + worker.getDepartment().getName());
+        System.out.println("Income for: " + monthAndYear + " :" + String.format("%.2f", worker.income(year, month)));
 
         sc.close();
     }
@@ -100,7 +111,7 @@ public class ExercicioComposicao {
 
     enum WorkerLevel {
         JUNIOR,
-        MID_LEVER,
+        MID_LEVEL,
         SENIOR;
     }
 
