@@ -7,15 +7,14 @@ import java.util.Date;
 import java.util.List;
 
 public class ExercicioStringBuilder {
+    private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+
     public static void main(String[] args) throws ParseException {
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+
 
         Comment c1 = new Comment("Have a nice trip!");
         Comment c2 = new Comment("Wow, thats awesome!");
-        Post p1 = new Post(sdf.parse("21/06/2018 13:05:44"),
-                "Traveling to New Zealand",
-                "I'm going to visit this wonderful country!",
-                12);
+        Post p1 = new Post(sdf.parse("21/06/2018 13:05:44"), "Traveling to New Zealand", "I'm going to visit this wonderful country!", 12);
         p1.addComment(c1);
         p1.addComment(c2);
     }
@@ -72,6 +71,22 @@ public class ExercicioStringBuilder {
 
         public void removeComment(Comment comment) {
             this.comments.remove(comment);
+        }
+
+        // AGORA usamos a StringBuilder
+        @Override
+        public String toString() {
+            StringBuilder sb = new StringBuilder();
+            sb.append(title + "\n");
+            sb.append(likes);
+            sb.append(" Likes - ");
+            sb.append(sdf.format(moment) + "\n");
+            sb.append(content + "\n");
+            sb.append("Comments:\n");
+            for (Comment comment : comments) {
+                sb.append(comment.getText() + "\n");
+            }
+            return sb.toString();
         }
     }
 
