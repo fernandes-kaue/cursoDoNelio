@@ -1,6 +1,8 @@
 package org.example.Modulo12EnumComposicao;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class ExercicioStringBuilder {
     public static void main(String[] args) {
@@ -16,6 +18,18 @@ public class ExercicioStringBuilder {
 
     class Comment {
         private String text;
+
+        public Comment(String text) {
+            this.text = text;
+        }
+
+        public String getText() {
+            return text;
+        }
+
+        public void setText(String text) {
+            this.text = text;
+        }
     }
 
 }
