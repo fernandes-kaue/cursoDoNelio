@@ -6,10 +6,12 @@ import java.util.List;
 
 public class ExercicioStringBuilder {
     public static void main(String[] args) {
-
+        Comment c1 = new Comment("Have a nice trip!");
+        Comment c2 = new Comment("Wow, thats awesome!");
+        Post p1 = new Post(moment, title, content, likes);
     }
 
-    class Post {
+    static class Post {
         private Date moment;
         private String title;
         private String content;
@@ -64,7 +66,7 @@ public class ExercicioStringBuilder {
         }
     }
 
-    class Comment {
+    static class Comment {
         private String text;
 
         public Comment(String text) {
