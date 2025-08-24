@@ -7,5 +7,15 @@ public class ExercicioStringBuilder {
 
     }
 
+    class Post {
+        private Date moment;
+        private String title;
+        private String content;
+        private Integer likes;
+    }
+
+    class Comment {
+        private String text;
+    }
 
 }
