@@ -33,6 +33,7 @@ public class Main {
             Double productPrice = sc.nextDouble();
             System.out.print("Quantity: ");
             Integer productQuantity = sc.nextInt();
+            sc.nextLine();
         }
        // assim que chegar em casa ou na facul eu termino essa bomba
 
