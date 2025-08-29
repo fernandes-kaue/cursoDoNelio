@@ -34,7 +34,7 @@ public class Main {
             System.out.print("Quantity: ");
             Integer productQuantity = sc.nextInt();
         }
-
+       // assim que chegar em casa ou na facul eu termino essa bomba
 
     }
 }
