@@ -11,8 +11,8 @@ public class Order {
 
     public Order(){}
 
-    public Order(Date moment, OrderStatus status){
-        this.moment = moment;
+    public Order(OrderStatus status){
+        this.moment = new Date();
         this.status = OrderStatus.PROCESSING;
     }
 
