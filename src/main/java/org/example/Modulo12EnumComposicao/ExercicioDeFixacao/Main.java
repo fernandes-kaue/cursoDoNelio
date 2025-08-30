@@ -35,6 +35,11 @@ public class Main {
             System.out.print("Quantity: ");
             Integer productQuantity = sc.nextInt();
             sc.nextLine();
+
+            Product prod = new Product(productName, productPrice);
+            OrderItem orderItem = new OrderItem(productQuantity, prod.getPrice());
+
+            order.addItem(orderItem);
         }
        // assim que chegar em casa ou na facul eu termino essa bomba
 
