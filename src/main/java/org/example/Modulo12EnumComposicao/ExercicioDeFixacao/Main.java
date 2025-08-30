@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) throws ParseException {
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        Order order = new Order();
 
         System.out.println("Enter client data:");
         System.out.print("Name: ");

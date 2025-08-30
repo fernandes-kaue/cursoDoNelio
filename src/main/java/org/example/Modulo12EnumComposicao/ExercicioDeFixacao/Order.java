@@ -9,9 +9,7 @@ public class Order {
     private OrderStatus status;
     private List<OrderItem> itemList = new ArrayList<OrderItem>();
 
-    public Order(){}
-
-    public Order(OrderStatus status){
+    public Order(){
         this.moment = new Date();
         this.status = OrderStatus.PROCESSING;
     }
