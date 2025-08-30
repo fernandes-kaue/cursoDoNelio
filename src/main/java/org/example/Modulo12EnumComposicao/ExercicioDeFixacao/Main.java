@@ -40,7 +40,11 @@ public class Main {
             OrderItem orderItem = new OrderItem(productQuantity, prod.getPrice());
 
             order.addItem(orderItem);
+
+            System.out.println(orderItem.getPrice() + prod.getName());
         }
+
+        System.out.println();
        // assim que chegar em casa ou na facul eu termino essa bomba
 
     }
