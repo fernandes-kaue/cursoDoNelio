@@ -14,6 +14,11 @@ public class Order {
         this.status = OrderStatus.PROCESSING;
     }
 
+    public Order(OrderStatus status){
+        this.moment = new Date();
+        this.status = status;
+    }
+
     public void addItem(OrderItem item) {
         itemList.add(item);
     }
