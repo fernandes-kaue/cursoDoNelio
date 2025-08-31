@@ -2,6 +2,10 @@ package org.example.Modulo13HerancaPolimorfismo.Heranca;
 
 /**
  * Conta empresarial com funcionalidade adicional de empréstimo com limite.
+ *
+ * @author Kaue
+ * @since 2025-08-30
+ * @version 1.0
  */
 public class BusinessAccount extends Account{
     private Double loanLimit;

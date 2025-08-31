@@ -2,7 +2,11 @@ package org.example.Modulo13HerancaPolimorfismo.Heranca;
 
 /**
  * Classe base de conta bancária demonstrando encapsulamento e herança.
- * <p>Fornece operações básicas de depósito e saque.</p>
+ * Fornece operações básicas de depósito e saque.
+ *
+ * @author Kaue
+ * @since 2025-08-30
+ * @version 1.0
  */
 public class Account {
     private Integer number;

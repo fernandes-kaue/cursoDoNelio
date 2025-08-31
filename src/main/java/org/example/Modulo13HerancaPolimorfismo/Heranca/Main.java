@@ -2,6 +2,10 @@ package org.example.Modulo13HerancaPolimorfismo.Heranca;
 
 /**
  * Demonstração de herança, upcasting e downcasting entre contas bancárias.
+ *
+ * @author Kaue
+ * @since 2025-08-30
+ * @version 1.0
  */
 public class Main {
     public static void main(String[] args) {

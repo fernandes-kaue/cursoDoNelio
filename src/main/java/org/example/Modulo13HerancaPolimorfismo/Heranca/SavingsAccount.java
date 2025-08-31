@@ -2,6 +2,10 @@ package org.example.Modulo13HerancaPolimorfismo.Heranca;
 
 /**
  * Conta poupança que atualiza o saldo com base em uma taxa de juros.
+ *
+ * @author Kaue
+ * @since 2025-08-30
+ * @version 1.0
  */
 public class SavingsAccount extends Account{
     private Double interestRate;
