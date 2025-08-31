@@ -15,17 +15,18 @@ public class Main {
         String clientName = sc.nextLine();
         System.out.print("Email: ");
         String clientEmail = sc.nextLine();
-        System.out.println("Birth date (DD/MM/YYYY): ");
+        System.out.print("Birth date (DD/MM/YYYY): ");
         Date birthDate = sdf.parse(sc.nextLine());
 
         Client client = new Client(clientName, clientEmail, birthDate);
 
         System.out.println("Enter order data: ");
         System.out.print("Status: ");
-        OrderStatus status = OrderStatus.valueOf(sc.nextLine());
-        System.out.print("How many items to this order?");
+        OrderStatus status = OrderStatus.valueOf(sc.nextLine().toUpperCase());
+        System.out.print("How many items to this order? ");
         int itemsQuantity = sc.nextInt();
         sc.nextLine();
+        Order order = new Order(client, status);
 
         for (int i = 0; i < itemsQuantity; i++) {
             System.out.println("Enter #" + (i + 1) + " item data:");
@@ -38,15 +39,15 @@ public class Main {
             sc.nextLine();
 
             Product prod = new Product(productName, productPrice);
-            OrderItem orderItem = new OrderItem(productQuantity, prod.getPrice());
+            OrderItem orderItem = new OrderItem(productQuantity, prod.getPrice(), prod);
 
             order.addItem(orderItem);
-
-            System.out.println(orderItem.getPrice() + prod.getName());
         }
 
         System.out.println();
-       // assim que chegar em casa ou na facul eu termino essa bomba
+
+        System.out.println(order);
+        // terminei essa bomba
 
     }
 }
