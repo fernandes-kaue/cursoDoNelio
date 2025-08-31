@@ -4,6 +4,12 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+/**
+ * Exemplo didático de composição de objetos envolvendo trabalhador, departamento e contratos por hora.
+ * <p>
+ * Este programa lê os dados de um trabalhador e seus contratos, e calcula a renda em um mês/ano informados.
+ * </p>
+ */
 public class ExercicioComposicao {
     public static void main(String[] args) throws ParseException {
         Scanner sc = new Scanner(System.in);
