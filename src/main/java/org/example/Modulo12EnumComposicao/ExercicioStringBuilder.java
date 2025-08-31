@@ -8,6 +8,10 @@ import java.util.List;
 
 /**
  * Exemplo de uso de StringBuilder para montar saídas textuais de uma entidade Post com comentários.
+ *
+ * @author Kaue
+ * @since 2025-08-23
+ * @version 1.0
  */
 public class ExercicioStringBuilder {
     private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
