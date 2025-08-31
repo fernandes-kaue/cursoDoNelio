@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * Exemplo de uso de StringBuilder para montar saídas textuais de uma entidade Post com comentários.
+ */
 public class ExercicioStringBuilder {
     private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
