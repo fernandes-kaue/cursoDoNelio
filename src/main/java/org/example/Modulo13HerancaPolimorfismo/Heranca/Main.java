@@ -51,6 +51,7 @@ public class Main {
             System.out.println("Balance updated");
         }
 
-        // hoje é domingo man me dá um desconto
+        // to commitando literalmente no cliente mas tlg ne man,
+        // a streak é a streak
     }
 }
