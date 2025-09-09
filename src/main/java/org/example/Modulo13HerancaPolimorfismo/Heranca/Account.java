@@ -87,5 +87,5 @@ public class Account {
     public void deposit(Double value) {
         this.balance += value;
     }
-    // hoje é domingo man slc
+    // meu almoço é mt curtooo :((
 }
