@@ -27,7 +27,7 @@ import java.time.LocalDate;
  * </p>
  *
  * @author Kaue
- * @since 2025-08-15
+ * @since 2025-08-11
  * @version 1.0
  */
 public class Enumeracoes {
