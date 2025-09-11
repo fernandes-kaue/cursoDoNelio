@@ -52,6 +52,6 @@ public class Main {
         }
 
         // to commitando literalmente no cliente mas tlg ne man,
-        // a streak é a streak²
+        // a streak é a streak³
     }
 }
