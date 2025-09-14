@@ -29,8 +29,10 @@ public class BusinessAccount extends Account{
 
     // é possível chamar a implementação da superclasse
     // utilizando a palavra-chave super
+    // geralmente convém acrescentar o FINAL em
+    // métodos sobrepostos
     @Override
-    public void withdraw(Double amount) {
+    public final void withdraw(Double amount) {
         super.withdraw(amount);
         balance -= 2;
     }
