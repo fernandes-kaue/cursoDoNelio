@@ -27,6 +27,12 @@ public class SavingsAccount extends Account{
         this.interestRate = interestRate;
     }
 
+    // utiliza-se o @Override para se sobrepor/sobrescrever métodos
+    @Override
+    public void withdraw(Double amount) {
+        balance -= amount;
+    }
+
     /**
      * Obtém a taxa de juros.
      * @return taxa de juros

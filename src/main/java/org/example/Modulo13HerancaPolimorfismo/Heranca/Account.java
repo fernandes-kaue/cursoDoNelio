@@ -77,7 +77,7 @@ public class Account {
      * @param value valor a sacar
      */
     public void withdraw(Double value) {
-        this.balance -= value;
+        this.balance -= value + 5.0;
     }
 
     /**

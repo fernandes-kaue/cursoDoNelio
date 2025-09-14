@@ -27,6 +27,14 @@ public class BusinessAccount extends Account{
         this.loanLimit = loanLimit;
     }
 
+    // é possível chamar a implementação da superclasse
+    // utilizando a palavra-chave super
+    @Override
+    public void withdraw(Double amount) {
+        super.withdraw(amount);
+        balance -= 2;
+    }
+
     /**
      * Realiza um empréstimo, creditando o valor ao saldo caso não ultrapasse o limite disponível.
      * @param value valor solicitado
