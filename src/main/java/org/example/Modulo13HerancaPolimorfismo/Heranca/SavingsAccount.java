@@ -7,7 +7,8 @@ package org.example.Modulo13HerancaPolimorfismo.Heranca;
  * @since 2025-08-30
  * @version 1.0
  */
-public class SavingsAccount extends Account{
+// para classes, a palavra final impede que a classe seja herdada
+public final class SavingsAccount extends Account{
     private Double interestRate;
 
     /** Construtor padrão. */
@@ -37,7 +38,8 @@ public class SavingsAccount extends Account{
      * Obtém a taxa de juros.
      * @return taxa de juros
      */
-    public Double getInterestRate() {
+    // final para métodos impede que o método seja sobrescrito
+    public final Double getInterestRate() {
         return interestRate;
     }
 
