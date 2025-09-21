@@ -12,6 +12,7 @@ public class OutsorcedEmployee extends Employee{
         this.additionalCharge = additionalCharge;
     }
 
+    // na minha cabeça fazia mais sentido deixar a soma do bônus separada
     @Override
     public Double payment() {
         return super.payment() + additionalCharge + (additionalCharge * 0.1);
