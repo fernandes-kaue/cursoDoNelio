@@ -16,4 +16,12 @@ public class OutsorcedEmployee extends Employee{
     public Double payment() {
         return super.payment() + additionalCharge + (additionalCharge * 0.1);
     }
+
+    public Double getAdditionalCharge() {
+        return additionalCharge;
+    }
+
+    public void setAdditionalCharge(Double additionalCharge) {
+        this.additionalCharge = additionalCharge;
+    }
 }
