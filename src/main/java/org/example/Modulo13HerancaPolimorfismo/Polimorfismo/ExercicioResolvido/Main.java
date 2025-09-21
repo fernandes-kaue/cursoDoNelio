@@ -40,7 +40,7 @@ public class Main {
         System.out.println("PAYMENTS:");
 
         for (Employee employee : list) {
-            System.out.println(employee.getName() + "- $" + employee.payment());
+            System.out.println(employee.getName() + "- $" + String.format("%.2f", employee.payment()));
         }
         // funciona :)
 
