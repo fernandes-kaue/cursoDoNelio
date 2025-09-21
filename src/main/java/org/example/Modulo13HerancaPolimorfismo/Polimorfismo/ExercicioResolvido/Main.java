@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        List<Employee> list = new ArrayList();
+        List<Employee> list = new ArrayList<>();
 
         System.out.print("Enter number of employees: ");
         Integer numberOfEmployees = sc.nextInt();
