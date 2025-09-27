@@ -11,10 +11,12 @@ public class UsedProduct extends Product{
     public UsedProduct() {
     }
 
-    public UsedProduct(Date manufactureDate, SimpleDateFormat sdf) {
+    public UsedProduct(String name, Double price, Date manufactureDate) {
+        super(name, price);
         this.manufactureDate = manufactureDate;
-        this.sdf = sdf;
     }
+
+
 
     @Override
     public String priceTag() {
