@@ -12,7 +12,7 @@ package org.example.Modulo13HerancaPolimorfismo.ClassesAbstratas;
 // Ao criar uma classe abstrata, a palavra abstract deve ser colocada antes de class.
 // Classes abstratas não podem ser instanciadas, mas podem ser herdadas.
 // Garantem polimorfismo e herança total.
-public abstract class Account {
+public abstract class AccountAbstrata {
     private Integer number;
     private String holder;
     // protected permite que outras classes do mesmo pacote acessem o atributo
@@ -21,7 +21,7 @@ public abstract class Account {
     /**
      * Construtor padrão.
      */
-    public Account() {
+    public AccountAbstrata() {
     }
 
     /**
@@ -30,7 +30,7 @@ public abstract class Account {
      * @param holder nome do titular
      * @param balance saldo inicial
      */
-    public Account(Integer number, String holder, Double balance) {
+    public AccountAbstrata(Integer number, String holder, Double balance) {
         this.number = number;
         this.holder = holder;
         this.balance = balance;
