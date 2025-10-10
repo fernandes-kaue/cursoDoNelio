@@ -1,8 +1,6 @@
 package org.example.Modulo13HerancaPolimorfismo.ClassesAbstratas.ExercicioDeFixacao;
 
 public class PessoaFisica extends Contribuinte {
-    private String nome;
-    private Double rendaAnual;
     private Double gastosComSaude;
 
     public PessoaFisica() {
@@ -23,7 +21,6 @@ public class PessoaFisica extends Contribuinte {
         }
     }
 
-    @Override
     public Double getImposto() {
         if (gastosComSaude != null && gastosComSaude != 0) {
             return gastosComSaude * 0.5;
@@ -31,7 +28,6 @@ public class PessoaFisica extends Contribuinte {
         return 0.0;
     }
 
-    @Override
     public Double getTotalImposto() {
         return getIR() + getImposto();
     }
