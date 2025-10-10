@@ -5,6 +5,8 @@ public abstract class Contribuinte {
     }
 
     public abstract Double getIR();
+
     public abstract Double getImposto();
+
     public abstract Double getTotalImposto();
 }
