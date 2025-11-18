@@ -16,7 +16,7 @@ public class Reservation {
     }
 
     public Integer duration() {
-        return (int) ((checkOut.getTime() - checkIn.getTime()) / (1000 * 60 * 60));
+        return (int) ((checkOut.getTime() - checkIn.getTime()) / (1000 * 60 * 60 * 24));
     }
 
     public void updateDates(Date newCheckInDate, Date newCheckOutDate) {
