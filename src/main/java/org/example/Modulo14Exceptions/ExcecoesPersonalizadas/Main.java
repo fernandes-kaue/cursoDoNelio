@@ -6,10 +6,10 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws ParseException {
-        Scanner sc = new Scanner(System.in);
-        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    static Scanner sc = new Scanner(System.in);
 
+    public static void main(String[] args) throws ParseException {
         System.out.printf("Room number: ");
         Integer roomNumber = sc.nextInt();
         sc.nextLine();
@@ -21,14 +21,18 @@ public class Main {
         Reservation reservation = new Reservation(roomNumber, checkInDate, checkOutDate);
         System.out.println(reservation);
 
+        updateReservation(reservation);
+
+    }
+
+    public static void updateReservation(Reservation reservation) throws ParseException {
         System.out.println("Enter data to update reservation:");
         System.out.printf("Check-in date (dd/MM/yyyy): ");
-        checkInDate = sdf.parse(sc.nextLine());
+        Date checkInDate = sdf.parse(sc.nextLine());
         System.out.printf("Check-out date (dd/MM/yyyy): ");
-        checkOutDate = sdf.parse(sc.nextLine());
+        Date checkOutDate = sdf.parse(sc.nextLine());
         reservation.updateDates(checkInDate, checkOutDate);
         System.out.println(reservation);
         sc.close();
-
     }
 }
