@@ -1,11 +1,14 @@
 package org.example.Modulo14Exceptions.ExcecoesPersonalizadas;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Reservation {
     private Integer roomNumber;
     private Date checkIn;
     private Date checkOut;
+
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public Reservation() {}
 
@@ -28,8 +31,8 @@ public class Reservation {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Room " + roomNumber + ", ");
-        sb.append(" check-in: " + checkIn + ", ");
-        sb.append(" check-out: " + checkOut + ", ");
+        sb.append(" check-in: " + sdf.format(checkIn) + ", ");
+        sb.append(" check-out: " + sdf.format(checkOut) + ", ");
         sb.append(duration() + " nights");
         return sb.toString();
     }
