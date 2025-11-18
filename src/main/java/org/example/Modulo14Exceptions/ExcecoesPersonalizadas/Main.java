@@ -17,10 +17,18 @@ public class Main {
         Date checkInDate = sdf.parse(sc.nextLine());
         System.out.printf("Check-out date (dd/MM/yyyy): ");
         Date checkOutDate = sdf.parse(sc.nextLine());
-        sc.close();
 
         Reservation reservation = new Reservation(roomNumber, checkInDate, checkOutDate);
         System.out.println(reservation);
+
+        System.out.println("Enter data to update reservation:");
+        System.out.printf("Check-in date (dd/MM/yyyy): ");
+        checkInDate = sdf.parse(sc.nextLine());
+        System.out.printf("Check-out date (dd/MM/yyyy): ");
+        checkOutDate = sdf.parse(sc.nextLine());
+        reservation.updateDates(checkInDate, checkOutDate);
+        System.out.println(reservation);
+        sc.close();
 
     }
 }
