@@ -2,6 +2,7 @@ package org.example.Modulo14Exceptions.ExcecoesPersonalizadas;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 public class Reservation {
     private Integer roomNumber;
@@ -19,8 +20,9 @@ public class Reservation {
         this.checkOut = checkOut;
     }
 
-    public Integer duration() {
-        return (int) ((checkOut.getTime() - checkIn.getTime()) / (1000 * 60 * 60 * 24) + 1);
+    public Long duration() {
+        long diff = checkOut.getTime() - checkIn.getTime();
+        return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
     }
 
     public void updateDates(Date newCheckInDate, Date newCheckOutDate) {
