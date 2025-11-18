@@ -24,8 +24,8 @@ public class Reservation {
     }
 
     public void updateDates(Date newCheckInDate, Date newCheckOutDate) {
-        setCheckIn(newCheckInDate);
-        setCheckOut(newCheckOutDate);
+        this.checkIn = newCheckInDate;
+        this.checkOut = newCheckOutDate;
     }
 
     @Override
