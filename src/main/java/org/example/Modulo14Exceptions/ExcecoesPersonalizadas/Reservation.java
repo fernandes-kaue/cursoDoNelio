@@ -23,18 +23,37 @@ public class Reservation {
     }
 
     public void updateDates(Date newCheckInDate, Date newCheckOutDate) {
-        this.checkIn = newCheckInDate;
-        this.checkOut = newCheckOutDate;
+        setCheckIn(newCheckInDate);
+        setCheckOut(newCheckOutDate);
     }
 
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Room " + roomNumber + ", ");
-        sb.append(" check-in: " + sdf.format(checkIn) + ", ");
-        sb.append(" check-out: " + sdf.format(checkOut) + ", ");
+        sb.append(" check-in: " + sdf.format(getCheckIn()) + ", ");
+        sb.append(" check-out: " + sdf.format(getCheckOut()) + ", ");
         sb.append(duration() + " nights");
         return sb.toString();
     }
 
+    public Integer getRoomNumber() {
+        return roomNumber;
+    }
+
+    public Date getCheckIn() {
+        return checkIn;
+    }
+
+    public void setCheckIn(Date checkIn) {
+        this.checkIn = checkIn;
+    }
+
+    public Date getCheckOut() {
+        return checkOut;
+    }
+
+    public void setCheckOut(Date checkOut) {
+        this.checkOut = checkOut;
+    }
 }
