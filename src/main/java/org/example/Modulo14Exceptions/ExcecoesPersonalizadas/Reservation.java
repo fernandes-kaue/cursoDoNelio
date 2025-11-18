@@ -24,4 +24,14 @@ public class Reservation {
         this.checkOut = newCheckOutDate;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Room " + roomNumber + ", ");
+        sb.append(" check-in: " + checkIn + ", ");
+        sb.append(" check-out: " + checkOut + ", ");
+        sb.append(duration() + " nights");
+        return sb.toString();
+    }
+
 }
